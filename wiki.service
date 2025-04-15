@@ -1,0 +1,15 @@
+[Unit]
+Description=Lance Seafile sous Docker
+BindsTo=docker.service
+After=docker.service
+
+[Service]
+ExecStart=/home/debian/wiki/wiki.sh -du
+WorkingDirectory=/home/debian/wiki
+Restart=on-failure
+RestartSec=30
+User=debian
+Group=debian
+
+[Install]
+WantedBy=multi-user.target
