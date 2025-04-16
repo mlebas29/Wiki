@@ -6,27 +6,27 @@ Mise en place d’un cloud privé
 
 Installation de la "colle" :
 
-  install.sh
+  `install.sh`
 
 Mise en place du démarrage système :
 
-  sudo cp $HOME/wiki/wiki.service /etc/systemd/system
+  `sudo cp $HOME/wiki/wiki.service /etc/systemd/system
   sudo systemctl daemon-reload
-  sudo systemctl enable wiki
+  sudo systemctl enable wiki`
 
 Démarrage manuel :
 
-  sudo systemctl start wiki
+  `sudo systemctl start wiki
    ou 
-  $HOME/wiki/wiki.sh -u
+  $HOME/wiki/wiki.sh -u`
 
-  sudo systemctl status wiki
+  `sudo systemctl status wiki`
 
 
 En cas de problème de renouvellement de certificat SSL :
 
-  sudo systemctl disable snap.certbot.renew.service
+  `sudo systemctl disable snap.certbot.renew.service
   sudo systemctl disable snap.certbot.renew.timer
-  crontab -e avec $HOME/wiki/crontab.txt
+  crontab -e avec $HOME/wiki/crontab.txt`
 
 
