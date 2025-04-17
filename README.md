@@ -4,7 +4,7 @@ Mon site de partage privé
 Mise en place d’un cloud privé
  - Suivre la procédure d'installation comme indiqué dans https://labeille.net/?p=764
 
-- Installation de la "colle" :
+- Installation de la "colle" via wget :
 
   `install.sh`
 
@@ -26,6 +26,6 @@ Mise en place d’un cloud privé
   
   `sudo systemctl disable snap.certbot.renew.timer`
   
-  `crontab -e avec $HOME/wiki/crontab.txt`
+  `sudo crontab $HOME/wiki/crontab.txt`
 
 
