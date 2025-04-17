@@ -17,15 +17,8 @@ Mise en place d’un cloud privé
   `sudo systemctl enable wiki`
 
 - Démarrage manuel :
-
-  `sudo systemctl start wiki`
-  
-   `ou `
    
-  `$HOME/wiki/wiki.sh -u`
-
-  `sudo systemctl status wiki`
-
+  `$HOME/wiki/wiki.sh -up`
 
 - En cas de problème de renouvellement de certificat SSL :
 
